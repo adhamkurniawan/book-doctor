@@ -9,11 +9,11 @@ class PatientsController < ApplicationController
   end
 
   def new
-    @pateint = Patient.new
+    @patient = Patient.new
   end
 
   def create
-    @pateint = Patient.new(patient_params)
+    @patient = Patient.new(patient_params)
 
     if @patient.save
       redirect_to @patient, notice: "You have succesfully booked!"
@@ -44,6 +44,6 @@ class PatientsController < ApplicationController
     end
 
     def patient_params
-      params.require(:Patient).permit(:name, :email, :phone, :complaint)
+      params.require(:patient).permit(:name, :email, :phone, :complaint)
     end
 end
