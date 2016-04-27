@@ -1,0 +1,4 @@
+// Mengambil data dari patients untuk ditampilkan sebagai index
+.col-md-4.col-md-offset-2
+  - @patients.each do |patient|
+    %h2= link_to patient.name, patient
