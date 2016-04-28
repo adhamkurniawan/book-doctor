@@ -1,0 +1,17 @@
+= simple_form_for @doctor_shift do |f|
+  = f.label "Choose Doctor Name:"
+  %br
+  = collection_select(:doctor_shift, :doctor_id, Doctor.all, :id, :name, { :prompt => false })
+  %br
+  %br
+  = f.label "Choose Day Shift:"
+  %br
+  = collection_select(:doctor_shift, :day_shift_id, DayShift.all, :id, :name, { :prompt => false })
+  %br
+  %br
+  = f.label "Choose Hour Shift:"
+  %br
+  = collection_select(:doctor_shift, :hour_shift_id, HourShift.all, :id, :name, { :prompt => false })
+  %br
+  %br
+  = f.button :submit, class: "btn btn-default"

@@ -3,10 +3,11 @@ Rails.application.routes.draw do
   root "doctors#index"
 
   # CRUD ability URL doctors
-  resources :doctors do
-    resources :doctor_shifts
-  end
+  resources :doctors
 
   # CRUD ability URL doctors
   resources :patients
+
+  # CRUD ability URL doctor_shifts
+  resources :doctor_shifts
 end

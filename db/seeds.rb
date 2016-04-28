@@ -6,10 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-  DayShift.create(day_shift: "Monday - Friday")
-  DayShift.create(day_shift: "Monday - Friday")
-  DayShift.create(day_shift: "Saturday - Sunday")
+  Doctor.create(name: "Dr. Anton", specialist: "General Practicioner")
+  Doctor.create(name: "Dr. Fabian", specialist: "Dentist")
+  Doctor.create(name: "Dr. Erik", specialist: "Gynecologist")
 
-  HourShift.create(hour_shift: "08:00 - 16:00")
-  HourShift.create(hour_shift: "13:00 - 22:00")
-  HourShift.create(hour_shift: "09:00 - 15:00")
+  DayShift.create(name: "Monday - Friday")
+  DayShift.create(name: "Monday - Friday")
+  DayShift.create(name: "Saturday - Sunday")
+
+  HourShift.create(name: "08:00 - 16:00")
+  HourShift.create(name: "13:00 - 22:00")
+  HourShift.create(name: "09:00 - 15:00")
