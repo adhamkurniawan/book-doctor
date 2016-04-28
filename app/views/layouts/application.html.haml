@@ -18,6 +18,8 @@
 
         .collapse.navbar-collapse#bs-example-navbar-collapse-1
           %nav.nav.navbar-nav
+            %li= link_to "Doctors", doctors_path
+            %li= link_to "Patients", patients_path
             %li= link_to "Add Doctor", new_doctor_path
             %li= link_to "Add Patient", new_patient_path
 
