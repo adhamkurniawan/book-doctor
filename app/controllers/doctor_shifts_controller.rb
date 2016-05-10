@@ -7,7 +7,13 @@ class DoctorShiftsController < ApplicationController
     @hour_shifts = HourShift.all
   end
 
+  # This is for showing ID as their name in database
+  # In method show :
+    # Use database Doctor to find
   def show
+    @doctor = Doctor.find(params[:id])
+    @day_shift = DayShift.find(params[:id])
+    @hour_shift = HourShift.find(params[:id])
   end
 
   def new
