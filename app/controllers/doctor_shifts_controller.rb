@@ -1,3 +1,4 @@
+# Class DoctorShift
 class DoctorShiftsController < ApplicationController
   before_action :find_doctor_shift, only: [:show, :edit, :update, :destroy]
 
@@ -9,7 +10,9 @@ class DoctorShiftsController < ApplicationController
 
   # This is for showing ID as their name in database
   # In method show :
-    # Use database Doctor to find
+    # Use database Doctor to find doctor id and showed in views as name
+    # Use database DayShift to find day shift id and showed in views as name
+    # Use database HourShift to find hour shift id and showed in views as name
   def show
     @doctor = Doctor.find(params[:id])
     @day_shift = DayShift.find(params[:id])

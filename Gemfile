@@ -26,6 +26,8 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 # Haml for syntax highlighting
 gem 'haml'
+# Yard for documenting our application
+gem 'yard'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
