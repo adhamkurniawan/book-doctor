@@ -1,5 +1,6 @@
 # Class DoctorShift
 class DoctorShiftsController < ApplicationController
+  #
   before_action :find_doctor_shift, only: [:show, :edit, :update, :destroy]
 
   def index
